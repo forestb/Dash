@@ -4,11 +4,11 @@ using System.Runtime.InteropServices;
 // General Information about an assembly is controlled through the following
 // set of attributes. Change these attribute values to modify the information
 // associated with an assembly.
-[assembly: AssemblyTitle("Dash.Cmd")]
+[assembly: AssemblyTitle("Dash.Lib")]
 [assembly: AssemblyDescription("")]
 [assembly: AssemblyConfiguration("")]
 [assembly: AssemblyCompany("")]
-[assembly: AssemblyProduct("Dash.Cmd")]
+[assembly: AssemblyProduct("Dash.Lib")]
 [assembly: AssemblyCopyright("Copyright ©  2017")]
 [assembly: AssemblyTrademark("")]
 [assembly: AssemblyCulture("")]
@@ -19,7 +19,7 @@ using System.Runtime.InteropServices;
 [assembly: ComVisible(false)]
 
 // The following GUID is for the ID of the typelib if this project is exposed to COM
-[assembly: Guid("48e595fc-d1e2-4dbe-8845-f61012992324")]
+[assembly: Guid("4b9e4e28-868f-4c3e-a219-941d4a609451")]
 
 // Version information for an assembly consists of the following four values:
 //
