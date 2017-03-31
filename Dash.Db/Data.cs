@@ -15,7 +15,7 @@ namespace Dash.Db
         /// should probably be downloaded and parsed from the source, but I'm unsure of the Wiresharks rules on 
         /// dynamically linking to their database.
         /// </summary>
-        private static string Filepath = @"Data\manuf";
+        private static string Filepath = @"DataStore\manuf";
 
         private static string ReadFile()
         {
