@@ -4,6 +4,8 @@ namespace Dash.Lib.Exceptions
 {
     public class PcapMissingException : Exception
     {
+        public static string PcapMissingErrorMessage = "No interfaces found! Make sure WinPcap is installed.";
+
         public PcapMissingException()
         {
         }

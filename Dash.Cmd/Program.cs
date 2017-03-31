@@ -24,7 +24,7 @@ namespace Dash.Cmd
             }
             catch (PcapMissingException)
             {
-                Console.WriteLine("No Pcap is missing, please install it.");
+                throw new PcapMissingException(PcapMissingException.PcapMissingErrorMessage);
             }
 
             Console.Read();

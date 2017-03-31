@@ -75,7 +75,7 @@ namespace Dash.Lib.Network
             }
             catch (Exception)
             {
-                throw new PcapMissingException("No interfaces found! Make sure WinPcap is installed.");
+                throw new PcapMissingException(PcapMissingException.PcapMissingErrorMessage);
             }
         }
     }
