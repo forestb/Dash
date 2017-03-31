@@ -37,6 +37,7 @@ namespace Dash.Cmd
             // using our Wireshark-Manufacturer dataset, determine if the device is an Amazon device
             string macSubset = probe.DashMac.Substring(0, 6);
 
+            // if Amazon device, let the user know
             if (Data.AmazonDataSet.Contains(macSubset))
             {
                 Console.WriteLine("Amazon Dash Connected: " + probe.DashMac + " seen on " + probe.Device);
