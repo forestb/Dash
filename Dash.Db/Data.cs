@@ -51,18 +51,20 @@ namespace Dash.Db
 
         private static Tuple<string, string> ParseManufacturerData(string s)
         {
+            if (!IsMacAddressSubset(s))
+            {
+                return null;
+            }
+
+            // the format is
+            // mac <tab> manufacturer <space><space>...<space> // comment
+            // update the format to simplify parsing and accessing the first and second element (the useful info)
             s = s.Replace("\t", " ");
 
             string[] splitWhitespace = new[] { " " };
+            string[] splitResults = s.Split(splitWhitespace, StringSplitOptions.RemoveEmptyEntries);
 
-            if (IsMacAddressSubset(s))
-            {
-                var splitResults = s.Split(splitWhitespace, StringSplitOptions.RemoveEmptyEntries);
-
-                return new Tuple<string, string>(splitResults[0].Replace(":", string.Empty), splitResults[1]);
-            }
-
-            return null;
+            return new Tuple<string, string>(splitResults[0].Replace(":", string.Empty), splitResults[1]);
         }
 
         /// <summary>
