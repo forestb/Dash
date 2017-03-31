@@ -56,6 +56,7 @@ namespace Dash.Lib.Network
                                 Device = device.MacAddress.ToString()
                             });
                     };
+
                     device.Open(DeviceMode.Promiscuous, READ_TIMEOUT_MILLISECONDS);
 
                     // tcpdump filter to capture only ARP Packets

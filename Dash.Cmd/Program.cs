@@ -1,4 +1,5 @@
 ﻿using System;
+using Dash.Db;
 using Dash.Lib.Exceptions;
 using Dash.Lib.Models;
 using Dash.Lib.Network;
@@ -32,8 +33,14 @@ namespace Dash.Cmd
         private static void network_DashProbed(object sender, EventArgs e)
         {
             var probe = (DashResponse)e;
-            Console.WriteLine("Amazon Dash Connected: " + probe.DashMac + " seen on " + probe.Device);
 
+            // using our Wireshark-Manufacturer dataset, determine if the device is an Amazon device
+            string macSubset = probe.DashMac.Substring(0, 6);
+
+            if (Data.AmazonDataSet.Contains(macSubset))
+            {
+                Console.WriteLine("Amazon Dash Connected: " + probe.DashMac + " seen on " + probe.Device);
+            }
         }
 
         private static void network_ListenerStarted(object sender, EventArgs e)
