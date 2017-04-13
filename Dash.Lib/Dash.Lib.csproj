@@ -55,5 +55,11 @@
   <ItemGroup>
     <None Include="packages.config" />
   </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\Dash.Db\Dash.Db.csproj">
+      <Project>{9cb02aad-4788-4c3f-8fa0-e165a6b00c52}</Project>
+      <Name>Dash.Db</Name>
+    </ProjectReference>
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
