@@ -56,10 +56,6 @@
     <None Include="packages.config" />
   </ItemGroup>
   <ItemGroup>
-    <ProjectReference Include="..\Dash.Db\Dash.Db.csproj">
-      <Project>{9cb02aad-4788-4c3f-8fa0-e165a6b00c52}</Project>
-      <Name>Dash.Db</Name>
-    </ProjectReference>
     <ProjectReference Include="..\Dash.Lib\Dash.Lib.csproj">
       <Project>{4b9e4e28-868f-4c3e-a219-941d4a609451}</Project>
       <Name>Dash.Lib</Name>

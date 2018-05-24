@@ -1,7 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.ComponentModel;
-using Dash.Db;
 using Dash.Lib.Exceptions;
 using Dash.Lib.Models;
 using PacketDotNet;
@@ -57,7 +56,7 @@ namespace Dash.Lib.Network
                         // using our Wireshark-manufacturer dataset, determine if the device is an Amazon device
                         string macSubset = dashMac.Substring(0, 6);
 
-                        if (!Data.AmazonDataSet.Contains(macSubset))
+                        if (!Data.Data.AmazonDataSet.Contains(macSubset))
                         {
                             return;
                         }
