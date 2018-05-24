@@ -75,8 +75,5 @@ namespace Dash.Cmd
 }
 ```
 
-## Todo
-- The Mac Address-Manufacturer dataset parsing/handling can be improved significantly
-
 ## Links
 - [DashSharp](https://github.com/Codeusa/DashSharp) by Codeusa
