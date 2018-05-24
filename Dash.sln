@@ -1,13 +1,13 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio 15
-VisualStudioVersion = 15.0.26228.4
+VisualStudioVersion = 15.0.27130.2020
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Dash.Cmd", "Dash.Cmd\Dash.Cmd.csproj", "{48E595FC-D1E2-4DBE-8845-F61012992324}"
-EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Dash.Lib", "Dash.Lib\Dash.Lib.csproj", "{4B9E4E28-868F-4C3E-A219-941D4A609451}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Dash.Db", "Dash.Db\Dash.Db.csproj", "{9CB02AAD-4788-4C3F-8FA0-E165A6B00C52}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Dash.Cli", "Dash.Cli\Dash.Cli.csproj", "{48E595FC-D1E2-4DBE-8845-F61012992324}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -15,10 +15,6 @@ Global
 		Release|Any CPU = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(ProjectConfigurationPlatforms) = postSolution
-		{48E595FC-D1E2-4DBE-8845-F61012992324}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{48E595FC-D1E2-4DBE-8845-F61012992324}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{48E595FC-D1E2-4DBE-8845-F61012992324}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{48E595FC-D1E2-4DBE-8845-F61012992324}.Release|Any CPU.Build.0 = Release|Any CPU
 		{4B9E4E28-868F-4C3E-A219-941D4A609451}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
 		{4B9E4E28-868F-4C3E-A219-941D4A609451}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{4B9E4E28-868F-4C3E-A219-941D4A609451}.Release|Any CPU.ActiveCfg = Release|Any CPU
@@ -27,8 +23,15 @@ Global
 		{9CB02AAD-4788-4C3F-8FA0-E165A6B00C52}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{9CB02AAD-4788-4C3F-8FA0-E165A6B00C52}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{9CB02AAD-4788-4C3F-8FA0-E165A6B00C52}.Release|Any CPU.Build.0 = Release|Any CPU
+		{48E595FC-D1E2-4DBE-8845-F61012992324}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{48E595FC-D1E2-4DBE-8845-F61012992324}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{48E595FC-D1E2-4DBE-8845-F61012992324}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{48E595FC-D1E2-4DBE-8845-F61012992324}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {77E73048-D0E6-4E4C-A3AC-B1C59944F714}
 	EndGlobalSection
 EndGlobal
